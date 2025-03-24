@@ -463,7 +463,7 @@
 <style>
   @font-face {
     font-family: 'neue';
-    src: url(http://localhost:1313/font/ComicNeue-Regular.ttf) format('truetype');
+    src: url(http://localhost:1313/font/ComicNeue-Bold.ttf) format('truetype');
   }
 
   :root {
@@ -545,6 +545,16 @@
       margin: auto;
       width: 22px;
       height: 16px;
+  }
+</style>
+
+<style>
+  #particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
   }
 </style>
 
@@ -655,6 +665,14 @@ function initCodeMoreBox() {
 initCodeMoreBox();
 </script>
 
+<div id="particles-js"></div>
+
+<script src=http://localhost:1313/background/particles.min.js></script>
+<script>
+  particlesJS.load('particles-js', "http://localhost:1313/background/particles.json", function() {
+    console.log('particles.js loaded - callback');
+  });
+</script>
 
 
 
